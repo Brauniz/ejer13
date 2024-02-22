@@ -68,4 +68,32 @@ public void primo() {
 	}else 
 		System.out.println("No es primo");
 }
+}public void road_to_200000() {
+	for(double i = kilometros; i <= 200000; i++) 
+	System.out.println(i);
+}
+public void contadorCaracteres() {
+System.out.println(marca.length());
+System.out.println(modelo.length());
+}
+public void masUsado() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Introduce los kilometros de tu coche y veremos si tiene más :");
+	double nuevokilometros = sc.nextInt();
+	if(nuevokilometros > this.kilometros) {
+		System.out.println("Tu coche tiene mas km");
+	}else {
+		System.out.println("Tu coche tiene menos km");
+	}
+}
+public void caro() {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Introduce el precio de tu coche y veremos si es mas caro :");	
+	double nuevoPrecio = sc.nextInt();
+	if(nuevoPrecio > this.kilometros
+			) {
+		System.out.println("Tu coche es mas caro");
+	}else {
+		System.out.println("Tu coche es menos caro");
+	}
 }
